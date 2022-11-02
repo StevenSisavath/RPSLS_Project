@@ -7,6 +7,7 @@ class Player:
         self.paper = 'Paper'
         self.lizard = 'Lizard'
         self.spock = 'Spock'
+        self.option = ''
         
     def choose_option(self):
         pass
