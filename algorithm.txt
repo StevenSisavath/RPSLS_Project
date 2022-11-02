@@ -1,0 +1,38 @@
+Display welcome
+display rules
+choose the number of players (possible no players only AI)
+display options. Prompt user to pick option (gesture)
+AI will pick random option
+show winner of that round
+next round will start
+reprompt user to pick again
+with an if statement display winner of best of 3
+ask to play again
+	how game should be ran
+
+Algorithm
+
+create shared repo
+create Rules parent class 
+in Rules class create rules ('str') using if statement to determine outcome
+in Rules class create a list for options [list]
+create Player (AI or human) child class
+create Human class
+create method to gesture human to choose an option
+create AI class
+create method in AI class to pick random option within list of options
+
+RPSLS game class
+create method to display welcome
+create method to run game first time
+create method to choose number of players (1 or 2) if statement
+create method to gesture human if game has humans
+create method for AI to pick random options
+create method to show winner of round
+create method to run game again without displaying welcome and choosing players (if statement,
+	because 2 out of 3 games might be finished after 2 games instead of 3)
+create method to display winner of 2 out of 3
+create method to run game in general
+
+instantiate RPSLS class to run game in main.py
+
