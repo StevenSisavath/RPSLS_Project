@@ -48,15 +48,19 @@ Spock vaporizes Rock
                         print(f'AI 1 beat the AI 2 and the score is {player_1_count}-{player_2_count} for AI 1!')
                         print('')
                         if player_1_count == necessary_wins:
-                            print('AI 1 wins RPSLS!') 
-                            game_continues = False                                                    
+                            print('AI 1 wins RPSLS!')
+                            print('') 
+                            game_continues = False 
+                            self.ask_to_play_again()                                                   
                     elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
                         player_2_count += 1
                         print(f'AI 2 beat the AI 1 and the score is {player_2_count}-{player_1_count} for AI 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 2 wins RPSLS!') 
-                            game_continues = False                         
+                            print('')
+                            game_continues = False   
+                            self.ask_to_play_again()                      
                     elif self.player_2 == 'Rock':
                         print('AI 1 chose the same thing as AI 2 and tied!')
 
@@ -67,14 +71,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('AI 1 wins RPSLS!') 
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
                         player_2_count += 1
                         print(f'AI 2 beat the AI 1 and the score is {player_2_count}-{player_1_count} for AI 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 2 wins RPSLS!') 
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Scissors':
                         print('AI 1 chose the same thing as AI 2 and tied!')
 
@@ -85,14 +93,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('AI 1 wins RPSLS!')  
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard' or self.player_2 == 'Scissors':
                         player_2_count += 1
                         print(f'AI 2 beat the AI 1 and the score is {player_2_count}-{player_1_count} for AI 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 2 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Paper':
                         print('AI 1 chose the same thing as AI 2 and tied!')
 
@@ -102,15 +114,19 @@ Spock vaporizes Rock
                         print(f'AI 1 beat the AI 2 and the score is {player_1_count}-{player_2_count} for AI 1!')
                         print('')
                         if player_1_count == necessary_wins:
-                            print('AI 1 wins RPSLS!') 
+                            print('AI 1 wins RPSLS!')
+                            print('') 
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Scissors' or self.player_2 == 'Rock':
                         player_2_count += 1
                         print(f'AI 2 beat the AI 1 and the score is {player_2_count}-{player_1_count} for AI 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 2 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard':
                         print('AI 1 chose the same thing as AI 2 and tied!')
 
@@ -121,14 +137,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('AI 1 wins RPSLS!')
-                            game_continues = False   
+                            print('')
+                            game_continues = False  
+                            self.ask_to_play_again() 
                     elif self.player_2 == 'Lizard' or self.player_2 == 'Paper':
                         player_2_count += 1
                         print(f'AI 2 beat the AI 1 and the score is {player_2_count}-{player_1_count} for AI 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 2 wins RPSLS!')
+                            print('')
                             game_continues = False
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Spock':
                         print('AI 1 chose the same thing as AI 2 and tied!')
 
@@ -145,15 +165,19 @@ Spock vaporizes Rock
                         print(f'Player 1 beat the AI 1 and the score is {player_1_count}-{player_2_count} for Player 1!')
                         print('')
                         if player_1_count == necessary_wins:
-                            print('Player 1 wins RPSLS!')    
-                            game_continues = False                                                
+                            print('Player 1 wins RPSLS!')  
+                            print('')  
+                            game_continues = False  
+                            self.ask_to_play_again()                                              
                     elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
                         player_2_count += 1
                         print(f'AI 1 beat the Player 1 and the score is {player_2_count}-{player_1_count} for A1 1!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 1 wins RPSLS!')  
-                            game_continues = False                         
+                            print('')
+                            game_continues = False
+                            self.ask_to_play_again()                         
                     elif self.player_2 == 'Rock':
                         print('Player 1 chose the same thing as AI 1 and tied!')
 
@@ -163,15 +187,19 @@ Spock vaporizes Rock
                         print(f'Player 1 beat the AI 1 and the score is {player_1_count}-{player_2_count} for Player 1!')
                         print('')
                         if player_1_count == necessary_wins:
-                            print('Player 1 wins RPSLS!')  
+                            print('Player 1 wins RPSLS!') 
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
                         player_2_count += 1
                         print(f'AI 1 beat the Player 1 and the score is {player_2_count}-{player_1_count} for A1 1!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Scissors':
                         print('Player 1 chose the same thing as AI 1 and tied!') 
 
@@ -182,14 +210,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('Player 1 wins RPSLS!')  
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard' or self.player_2 == 'Scissors':
                         player_2_count += 1
                         print(f'AI 1 beat the Player 1 and the score is {player_2_count}-{player_1_count} for A1 1!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Paper':
                         print('Player 1 chose the same thing as AI 1 and tied!')
 
@@ -199,15 +231,19 @@ Spock vaporizes Rock
                         print(f'Player 1 beat the AI 1 and the score is {player_1_count}-{player_2_count} for Player 1!')
                         print('')
                         if player_1_count == necessary_wins:
-                            print('Player 1 wins RPSLS!')  
+                            print('Player 1 wins RPSLS!')
+                            print('')  
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Scissors' or self.player_2 == 'Rock':
                         player_2_count += 1
                         print(f'AI 1 beat the Player 1 and the score is {player_2_count}-{player_1_count} for A1 1!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 1 wins RPSLS!')
+                            print('')
                             game_continues = False  
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard':
                         print('Player 1 chose the same thing as AI 1 and tied!') 
 
@@ -217,15 +253,19 @@ Spock vaporizes Rock
                         print(f'Player 1 beat the AI 1 and the score is {player_1_count}-{player_2_count} for Player 1!')
                         print('')
                         if player_1_count == necessary_wins:
-                            print('Player 1 wins RPSLS!')  
+                            print('Player 1 wins RPSLS!') 
+                            print('') 
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard' or self.player_2 == 'Paper':
                         player_2_count += 1
                         print(f'AI 1 beat the Player 1 and the score is {player_2_count}-{player_1_count} for A1 1!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('AI 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Spock':
                         print('Player 1 chose the same thing as AI 1 and tied!')
 
@@ -243,14 +283,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('Player 1 wins RPSLS!')
-                            game_continues = False                                                  
+                            print('')
+                            game_continues = False   
+                            self.ask_to_play_again()                                              
                     elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
                         player_2_count += 1
                         print(f'Player 2 beat the Player 1 and the score is {player_2_count}-{player_1_count} for Player 2!')
                         print('')
                         if player_2_count == necessary_wins:
-                            print('Player 2 wins RPSLS!')  
-                            game_continues = False                        
+                            print('Player 2 wins RPSLS!')
+                            print('')  
+                            game_continues = False  
+                            self.ask_to_play_again()                      
                     elif self.player_2 == 'Rock':
                         print('Player 1 chose the same thing as Player 2 and tied!')
 
@@ -261,15 +305,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('Player 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
-                            return
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
                         player_2_count += 1
                         print(f'Player 2 beat the Player 1 and the score is {player_2_count}-{player_1_count} for Player 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('Player 2 wins RPSLS!')  
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Scissors':
                         print('Player 1 chose the same thing as Player 2 and tied!')
 
@@ -280,14 +327,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('Player 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard' or self.player_2 == 'Scissors':
                         player_2_count += 1
                         print(f'Player 2 beat the Player 1 and the score is {player_2_count}-{player_1_count} for Player 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('Player 2 wins RPSLS!')  
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Paper':
                         print('Player 1 chose the same thing as Player 2 and tied!')
 
@@ -298,14 +349,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('Player 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Scissors' or self.player_2 == 'Rock':
                         player_2_count += 1
                         print(f'Player 2 beat the Player 1 and the score is {player_2_count}-{player_1_count} for Player 2!')
                         print('')
                         if player_2_count == necessary_wins:
                             print('Player 2 wins RPSLS!')  
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard':
                         print('Player 1 chose the same thing as Player 2 and tied!')
 
@@ -316,14 +371,18 @@ Spock vaporizes Rock
                         print('')
                         if player_1_count == necessary_wins:
                             print('Player 1 wins RPSLS!')
+                            print('')
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Lizard' or self.player_2 == 'Paper':
                         player_2_count += 1
                         print(f'Player 2 beat the Player 1 and the score is {player_2_count}-{player_1_count} for Player 2!')
                         print('')
                         if player_2_count == necessary_wins:
-                            print('Player 2 wins RPSLS!')  
+                            print('Player 2 wins RPSLS!') 
+                            print('') 
                             game_continues = False 
+                            self.ask_to_play_again()
                     elif self.player_2 == 'Spock':
                         print('Player 1 chose the same thing as Player 2 and tied!')
 
@@ -331,3 +390,10 @@ Spock vaporizes Rock
         self.display_welcome()
         self.display_rules()
         self.determine_winner()
+    
+    def ask_to_play_again(self):
+        wants_to_play_again = input('Do you want to play RPSLS again? yes/no?')
+        if wants_to_play_again == 'yes':
+            self.determine_winner()
+        else:
+            print('Goodbye')
