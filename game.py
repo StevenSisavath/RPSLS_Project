@@ -39,6 +39,8 @@ Spock vaporizes Rock
         necessary_wins = 2
         
         if self.number_of_players == 0:
+            game_continues = True
+            while game_continues:
                     self.player_1 = self.ai.choose_options()
                     print(f'AI 1 has {self.player_1}!')
                     self.player_2 = self.ai.choose_options()
@@ -49,14 +51,14 @@ Spock vaporizes Rock
                             player_1_count += 1
                             if player_1_count == necessary_wins:
                                 print('Player 1 wins')
-                                return
+                                
                             
                         elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
                             print('Player 2 beat the Player 1!')
                             player_2_count += 1
                             if player_2_count == necessary_wins:
                                 print('Player 2 wins')
-                                return
+                                
                         elif self.player_2 == 'Rock':
                             print('Player 1 tied Player 2!')
                             
@@ -107,59 +109,65 @@ Spock vaporizes Rock
                             
                                 
 
-        # elif self.player_1 == 'Scissors':
-        #                 if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
-        #                     print('Player 1 beat the Player 2!')
-        #                     player_1_count += 1
-        #                     if player_1_count == necessary_wins:
-        #                         print('Player 1 wins')
-        #                         break
-        #                 elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
-        #                     print('Player 2 beat the Player 1!')
-        #                     player_2_count += 1
-        #                     if player_2_count == necessary_wins:
-        #                         print('Player 2 wins')
-        #                         break
-        #                 elif self.player_2 == 'Scissors':
-        #                     print('Player 1 tied Player 2!')
+                    elif self.player_1 == 'Scissors':
+                        
+
+                        
+                                    if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
+                                        print('Player 1 beat the Player 2!')
+                                        player_1_count += 1
+                                        if player_1_count == necessary_wins:
+                                            print('Player 1 wins')
+                                            
+                                    elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
+                                        print('Player 2 beat the Player 1!')
+                                        player_2_count += 1
+                                        if player_2_count == necessary_wins:
+                                            print('Player 2 wins')
+                                            
+                                    elif self.player_2 == 'Scissors':
+                                        print('Player 1 tied Player 2!')
 
 
-        # elif self.number_of_players == 2:
-        #             self.player_1 = self.human.choose_options()
-        #             print(f'Player 1 has {self.player_1}!')
-        #             self.player_2 = self.human.choose_options()
-        #             print(f'Player 2 has {self.player_2}!')
-        #             if self.player_1 == 'Rock':
-        #                 if self.player_2 == 'Scissors' or self.player_2 == 'Lizard':
-        #                     print('Player 1 beat the Player 2!')
-        #                     player_1_count += 1
-        #                     if player_1_count == necessary_wins:
-        #                         print('Player 1 wins')
-        #                         break
-        #                 elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
-        #                     print('Player 2 beat the Player 1!')
-        #                     player_2_count += 1
-        #                     if player_2_count == necessary_wins:
-        #                         print('Player 2 wins')
-        #                         break
-        #                 elif self.player_2 == 'Rock':
-        #                     print('Player 1 tied Player 2!')
+        elif self.number_of_players == 2:
+            game_continues = True
+            while game_continues:
+                    self.player_1 = self.human.choose_options()
+                    self.player_2 = self.human.choose_options()
+                    print(f'Player 2 has {self.player_2}!')
+                    print(f'Player 1 has {self.player_1}!')
 
-        #             elif self.player_1 == 'Scissors':
-        #                 if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
-        #                     print('Player 1 beat the Player 2!')
-        #                     player_1_count += 1
-        #                     if player_1_count == necessary_wins:
-        #                         print('Player 1 wins')
-        #                         break
-        #                 elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
-        #                     print('Player 2 beat the Player 1!')
-        #                     player_2_count += 1
-        #                     if player_2_count == necessary_wins:
-        #                         print('Player 2 wins')
-        #                         break
-        #                 elif self.player_2 == 'Scissors':
-        #                     print('Player 1 tied Player 2!')
+                    if self.player_1 == 'Rock':
+                        if self.player_2 == 'Scissors' or self.player_2 == 'Lizard':
+                            print('Player 1 beat the Player 2!')
+                            player_1_count += 1
+                            if player_1_count == necessary_wins:
+                                print('Player 1 wins')
+                                
+                        elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
+                            print('Player 2 beat the Player 1!')
+                            player_2_count += 1
+                            if player_2_count == necessary_wins:
+                                print('Player 2 wins')
+                                
+                        elif self.player_2 == 'Rock':
+                            print('Player 1 tied Player 2!')
+
+                    elif self.player_1 == 'Scissors':
+                        if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
+                            print('Player 1 beat the Player 2!')
+                            player_1_count += 1
+                            if player_1_count == necessary_wins:
+                                print('Player 1 wins')
+                                
+                        elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
+                            print('Player 2 beat the Player 1!')
+                            player_2_count += 1
+                            if player_2_count == necessary_wins:
+                                print('Player 2 wins')
+                                
+                        elif self.player_2 == 'Scissors':
+                            print('Player 1 tied Player 2!')
                 
                     
 
