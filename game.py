@@ -33,35 +33,67 @@ Spock vaporizes Rock
         self.number_of_players = self.choose_number_of_players()
         print('')
         if self.number_of_players == 0:
-            self.ai_1 = self.ai.choose_options()
-            print(f'AI 1 has {self.ai_1}!')
-            self.ai_2 = self.ai.choose_options()
-            print(f'AI 2 has {self.ai_2}!')
+            self.player_1 = self.ai.choose_options()
+            print(f'AI 1 has {self.player_1}!')
+            self.player_2 = self.ai.choose_options()
+            print(f'AI 2 has {self.player_2}!')
+            if self.player_1 == 'Rock':
+                if self.player_2 == 'Scissors' or self.player_2 == 'Lizard':
+                    print('Player 1 beat the Player 2!')
+                elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
+                    print('Player 2 beat the Player 1!')
+                elif self.player_2 == 'Rock':
+                    print('Player 1 tied Player 2!')
+            elif self.player_1 == 'Scissors':
+                if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
+                    print('Player 1 beat the Player 2!')
+                elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
+                    print('Player 2 beat the Player 1!')
+                elif self.player_2 == 'Scissors':
+                    print('Player 1 tied Player 2!')
+
+
+
    
         elif self.number_of_players == 1:
-            self.ai_1 = self.ai.choose_options()
-            print(f'AI 1 has {self.ai_1}!')
-            self.human_1 = self.human.choose_options()
-            print(f'Player 1 has {self.human_1}!')
+            self.player_1 = self.ai.choose_options()
+            print(f'AI 1 has {self.player_1}!')
+            self.player_2 = self.human.choose_options()
+            print(f'Player 1 has {self.player_2}!')
+            if self.player_1 == 'Rock':
+                if self.player_2 == 'Scissors' or self.player_2 == 'Lizard':
+                    print('Player 1 beat the Player 2!')
+                elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
+                    print('Player 2 beat the Player 1!')
+                elif self.player_2 == 'Rock':
+                    print('Player 1 tied Player 2!')
+            elif self.player_1 == 'Scissors':
+                if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
+                    print('Player 1 beat the Player 2!')
+                elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
+                    print('Player 2 beat the Player 1!')
+                elif self.player_2 == 'Scissors':
+                    print('Player 1 tied Player 2!')
+
 
         elif self.number_of_players == 2:
-            self.human_1 = self.human.choose_options()
+            self.player_1 = self.human.choose_options()
             print(f'Player 1 has {self.human_1}!')
-            self.human_2 = self.human.choose_options()
-            print(f'Player 2 has {self.human_2}!')
-            if self.human_1 == 'Rock':
-                if self.human_2 == 'Scissors' or self.human_2 == 'Lizard':
+            self.player_2 = self.human.choose_options()
+            print(f'Player 2 has {self.player_2}!')
+            if self.player_1 == 'Rock':
+                if self.player_2 == 'Scissors' or self.player_2 == 'Lizard':
                     print('Player 1 beat the Player 2!')
-                elif self.human_2 == 'Paper' or self.human_2 == 'Spock':
+                elif self.player_2 == 'Paper' or self.player_2 == 'Spock':
                     print('Player 2 beat the Player 1!')
-                elif self.human_2 == 'Rock':
+                elif self.player_2 == 'Rock':
                     print('Player 1 tied Player 2!')
-            elif self.human_1 == 'Scissors':
-                if self.human_2 == 'Paper' or self.human_2 == 'Lizard':
+            elif self.player_1 == 'Scissors':
+                if self.player_2 == 'Paper' or self.player_2 == 'Lizard':
                     print('Player 1 beat the Player 2!')
-                elif self.human_2 == 'Rock' or self.human_2 == 'Spock':
+                elif self.player_2 == 'Rock' or self.player_2 == 'Spock':
                     print('Player 2 beat the Player 1!')
-                elif self.human_2 == 'Scissors':
+                elif self.player_2 == 'Scissors':
                     print('Player 1 tied Player 2!')
 
 
